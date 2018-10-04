@@ -29,7 +29,7 @@ app.use('/api/v1/', actors);
 mongo.check();
 app.use('/', express.static('public'));
 
-app.listen(process.env.PORT, (err) => {
+app.listen(process.env.APP_PORT, (err) => {
   if (err) {
     console.error(err);
   } else {
